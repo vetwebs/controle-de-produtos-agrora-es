@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Cadastro</title>
+    <link rel="stylesheet" href="Css/Style.css">
+    <script src="Js/Script.js"></script>
+    
+
+</head>
+<body>
+    <header>
+        <h1>Agro Rações</h1>
+    </header>
+
+    <main>
+        <div class="title">
+            <h2>Rações</h2>
+            <p>Lista de rações</p>    
+        </div>
+
+        <div class="card">
+
+            <div class="LineInput">
+                <label>Rações</label>
+                <input type="text"id="produto" placeholder="Nome do Produto">
+            </div>
+
+            <div class="LineInput">
+                <label>Preço</label>
+                <input type="number"id="preço" placeholder="Valor do Produto">
+            </div>
+
+        <button onclick="produto.salvar()" class="adicione" id="btn1">Salvar</button>
+
+            <button onclick="produto.cancelar()" class="deleter">Cancelar</button>
+            
+        </div>
+        <!--TABELA-->
+        <div class="conteiner">
+            <table border="1">
+                <thead>
+                    <th>Código</th>
+                    <th>Ração</th>
+                    <th>R$</th>
+                    <th>Ações</th>
+
+                    <tbody id="tbody">
+
+                      
+                    </tbody>
+                </thead>
+            </table>
+
+        </div>
+
+
+
+
+    </main>
+    
+
+    
+</body>
+</html>
